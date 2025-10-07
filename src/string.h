@@ -8,10 +8,5 @@ typedef struct {
     uint16_t capacity;
 } String;
 
-String str_newWithCapacity(uint16_t capacity) {
-    char *content = malloc(sizeof(char) * capacity);
-
-    return (String){.content = content, .size = 0, .capacity = capacity};
-};
-
-String str_new() { return str_newWithCapacity(64); }
+String str_newWithCapacity(uint16_t capacity); 
+String str_new(); 
