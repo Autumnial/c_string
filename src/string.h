@@ -1,7 +1,6 @@
 #pragma once
 
 #include <stdint.h>
-#include <stdlib.h>
 typedef struct {
     char    *content;
     uint16_t size;
@@ -10,3 +9,6 @@ typedef struct {
 
 String str_newWithCapacity(uint16_t capacity); 
 String str_new(); 
+String str_fromCstr(char* string);
+void str_destroy(String s);
+String str_copy(String s); 
