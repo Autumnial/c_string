@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.28)
+set(CMAKE_C_STANDARD 23)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+project(String)
+add_compile_options(-ggdb -O0 -Wall -Wextra -Werror)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+add_library(${PROJECT_NAME} src/string.c)
+add_executable(${PROJECT_NAME}test src/main.c)
