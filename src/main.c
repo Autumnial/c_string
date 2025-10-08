@@ -1,11 +1,11 @@
-#include "string.h"
+#include "c_string.h"
 #include <assert.h>
 #include <stdio.h>
 
-void printString(String s) {
+void printString(String string) {
 
-    printf("size: %u, capacity: %u\n", s.size, s.capacity);
-    printf("content: %s\n\n", s.content);
+    printf("size: %u, capacity: %u\n", string.size, string.capacity);
+    printf("content: %s\n\n", string.content);
 }
 
 int main(void) {

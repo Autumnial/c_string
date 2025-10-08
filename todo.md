@@ -7,12 +7,10 @@
 
 # Memory Management
 
-- [ ] string_reserve - Pre-allocate capacity
-- [ ] string_shrink_to_fit - Reduce capacity to fit size
-- [ ] string_capacity - Get current capacity
-- [ ] string_length - Get string length
-- [ ] string_empty - Check if string is empty
-- [ ] string_clear - Clear contents
+- [x] string_reserve - Pre-allocate capacity
+- [x] string_shrink_to_fit - Reduce capacity to fit size
+- [x] string_empty - Check if string is empty
+- [x] string_clear - Clear contents
 
 # Accessors
 
