@@ -14,7 +14,7 @@
 
 # Accessors
 
-- [ ] string_cstr - Get C-style string
+- [x] string_cstr - Get C-style string
 - [ ] string_at - Get character at index with bounds check
 - [ ] string_front - Get first character
 - [ ] string_back - Get last character

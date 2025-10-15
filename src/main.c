@@ -5,7 +5,8 @@
 void printString(String string) {
 
     printf("size: %u, capacity: %u\n", string.size, string.capacity);
-    printf("content: %s\n\n", string.content);
+    printf("content: %s\n\n", str_c_str(&string));
+    printf("content address: %p\n\n", string.content);
 }
 
 int main(void) {
@@ -15,9 +16,15 @@ int main(void) {
 
     assert(*test == *test_str.content);
 
-    String test_str_2 = str_copy(test_str);
+    String test_str_2 = str_copy(&test_str);
 
+    printf("String 1: \n");
     printString(test_str);
+    str_shrink_to_fit(&test_str); 
+    test_str.content[test_str.size] = 'a';
+    printf("String 1 again: \n");
+    printString(test_str);
+    printf("String 2: \n");
     printString(test_str_2);
 
     assert(test_str.content != test_str_2.content);
