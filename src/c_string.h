@@ -20,6 +20,7 @@ void str_shrink_to_fit(String *str);
 bool str_is_empty(String *str);
 void str_clear(String *str);
 
+// const char pointer so you cant actually modify it
 const char *str_c_str(String *str); 
 
 
